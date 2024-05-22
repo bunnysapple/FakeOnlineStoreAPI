@@ -10,7 +10,17 @@
       "image_origin": "https://unsplash.com/photos/black-canon-eos-rebel-series-dslr-camera-W2Dta_Yiwfw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
       "description": "black Canon EOS Rebel-series DSLR camera",
       "type": ["Technology"],
-      "keywords": ["camera", "canon", "DSLR"],
+      "keywords": [
+        "canon",
+        "eos",
+        "rebel",
+        "series",
+        "rebel-series",
+        "dslr",
+        "camera",
+        "technology",
+        "black Canon EOS Rebel-series DSLR camera"
+      ],
       "stock": 12,
       "price": 479.99,
       "ratings": 4.5
@@ -19,18 +29,47 @@
       "id": 1,
       "images": [
         "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1536627217140-899b0bc9d881?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "https://images.unsplash.com/photo-1536627217140-899b0bc9d881?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       ],
       "image_by": "Math",
       "image_creator_link": "https://unsplash.com/@builtbymath?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
       "image_origin": "https://unsplash.com/photos/black-fujifilm-bridge-camera-InK0X-GDjrQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
       "description": "Fujifilm X-T10",
       "type": ["Technology"],
-      "keywords": ["camera", "Fujifilm"],
+      "keywords": [
+        "frjifilm",
+        "x-t10",
+        "camera",
+        "technology",
+        "Fujifilm X-T10"
+      ],
       "stock": 8,
       "price": 627.71,
       "ratings": 4.5
+    },
+    {
+      "id": 3,
+      "images": [
+        "https://images.unsplash.com/photo-1559671218-cb178fb2ecb0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1559671216-bda69517c47f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1559592890-6e063fd9f265?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": "Goby",
+      "image_creator_link": "https://unsplash.com/@goby?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+      "image_origin": "https://unsplash.com/photos/four-electric-toothbrushes-zHMpGLOD8nI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+      "description": "Goby electric toothbrush with charger, stand and travel cover",
+      "type": ["Technology", "Hygeine"],
+      "keywords": [
+        "goby",
+        "toothbrush",
+        "stand",
+        "technology",
+        "hygeine",
+        "Goby electric toothbrush with charger, stand and travel cover"
+      ],
+      "stock": 17,
+      "price": 23.5,
+      "ratings": 5
     }
   ]
 }
