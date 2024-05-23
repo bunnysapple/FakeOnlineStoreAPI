@@ -19,7 +19,7 @@ def get_all_products():
         data = json.load(data)
         # return the data in json format.
         # Might not need the jsonify function currently but might be necessary later.
-        return jsonify(data)
+        return jsonify(data), 200
 
 # This route allows for the data to be filtered based on the "type" of the product.
 # I've passed in a "filter" variable into the get _types function.
@@ -35,7 +35,7 @@ def get_types(filter):
         # based on whether the filter variable passed in is one of the types that the product falls under.
         results = {"products": [x for x in data["products"] if filter in x["type"]]}
         # return the data in json format
-        return jsonify(results)
+        return jsonify(results), 200
 
 # This route allows for searches based on whether the query matches "keywords" of the product.
 # I've passed in a "query" variable into the get_searche function.
@@ -51,7 +51,7 @@ def get_search(query):
         all_keywords = [x["keywords"] for x in data["products"]]
         keywords = list(set(chain.from_iterable(all_keywords)))
         # use get_close_matches from difflib to see if the query matches any of the keywords.
-        matched_keywords = get_close_matches(query, keywords, len(data["products"]), 0.4)
+        matched_keywords = get_close_matches(query, keywords, len(data["products"]), 0.7)
         # use the keywords that match to get a list of all the products with that keyword.
         matches = [x for x in data["products"] if len([y for y in matched_keywords if y in x["keywords"]]) != 0]
         # use jaro_winkler from Levenshtein to rate how close to the search the "description" of each product is.
