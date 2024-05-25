@@ -23,7 +23,7 @@
         "black Canon EOS Rebel-series DSLR camera"
       ],
       "stock": 12,
-      "price": 479.99,
+      "price": "479.99",
       "ratings": 4.5
     },
     {
@@ -46,7 +46,7 @@
         "Fujifilm X-T10"
       ],
       "stock": 8,
-      "price": 627.71,
+      "price": "627.71",
       "ratings": 4.5
     },
     {
@@ -72,7 +72,7 @@
         "Goby electric toothbrush with charger, stand and travel cover"
       ],
       "stock": 17,
-      "price": 23.5,
+      "price": "23.50",
       "ratings": 5
     },
     {
@@ -95,7 +95,7 @@
         "LightWear Skin Care 0.5mm Titanium Rose Gold Derma Roller with box"
       ],
       "stock": 30,
-      "price": 16.95,
+      "price": "16.95",
       "ratings": 5
     },
     {
@@ -123,7 +123,7 @@
         "space gray Apple Watch with black Sports Band"
       ],
       "stock": 11,
-      "price": 170.0,
+      "price": "170.00",
       "ratings": 3.5
     },
     {
@@ -144,10 +144,11 @@
         "bag",
         "fashion",
         "women",
+        "handbag",
         "red and black sling bag"
       ],
       "stock": 6,
-      "price": 12.99,
+      "price": "12.99",
       "ratings": 4.5
     },
     {
@@ -173,7 +174,7 @@
         "charcoal Google Home mini"
       ],
       "stock": 14,
-      "price": 49.0,
+      "price": "49.00",
       "ratings": 4.5
     },
     {
@@ -183,8 +184,8 @@
         "https://images.unsplash.com/photo-1507646227500-4d389b0012be?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       ],
       "image_by": {
-        "Andreea Popa": "https://unsplash.com/@elfcodobelf",
-        "Ben Kolde": "https://unsplash.com/@benkolde"
+        "Andreea Popa": "https://unsplash.com/@elfcodobelf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+        "Ben Kolde": "https://unsplash.com/@benkolde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
       },
       "description": "coral Google Home mini speaker",
       "type": ["Technology"],
@@ -199,8 +200,226 @@
         "coral Google Home mini speaker"
       ],
       "stock": 12,
-      "price": 51.29,
+      "price": "51.29",
       "ratings": 4.5
+    },
+    {
+      "id": 8,
+      "images": [
+        "https://images.unsplash.com/photo-1591656852283-29bed2fe05ee?q=80&w=1536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1596552639068-99bd471b579c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1598099947145-e85739e7ca28?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Leisara Studio": "https://unsplash.com/@leisara?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Parigi - leather Leisara handbag",
+      "type": ["Fashion", "Women"],
+      "keywords": [
+        "parigi",
+        "leather",
+        "leisara",
+        "handbag",
+        "fashion",
+        "women",
+        "bag",
+        "leather Leisara handbag"
+      ],
+      "stock": 9,
+      "price": "460.00",
+      "ratings": 5
+    },
+    {
+      "id": 9,
+      "images": [
+        "https://images.unsplash.com/photo-1575032617751-6ddec2089882?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Irene Kredenets": "https://unsplash.com/@ikredenets?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Maroon leather handbag",
+      "type": ["Fashion", "Women"],
+      "keywords": [
+        "maroon",
+        "leather",
+        "handbag",
+        "fashion",
+        "women",
+        "bag",
+        "leather Leisara handbag"
+      ],
+      "stock": 12,
+      "price": "66.45",
+      "ratings": 4.5
+    },
+    {
+      "id": 10,
+      "images": [
+        "https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Haryo Setyadi": "https://unsplash.com/@uyk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+        "Anomaly": "https://unsplash.com/@anomaly?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Slim fit plain White crew neck t-shirt",
+      "type": ["Fashion", "Men"],
+      "keywords": [
+        "slim",
+        "fit",
+        "plain",
+        "white",
+        "crew",
+        "neck",
+        "t-shirt",
+        "fashion",
+        "men",
+        "shirt",
+        "Slim fit plain white crew neck t-shirt"
+      ],
+      "stock": 24,
+      "price": "25.00",
+      "ratings": 4
+    },
+    {
+      "id": 11,
+      "images": [
+        "https://images.unsplash.com/photo-1610502778270-c5c6f4c7d575?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Ryan Hoffman": "https://unsplash.com/@ryanhoffman007?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "3 plain black crew neck t-shirts of different sleeve lengths",
+      "type": ["Fashion", "Men"],
+      "keywords": [
+        "3",
+        "plain",
+        "black",
+        "crew",
+        "neck",
+        "t-shirt",
+        "differnt",
+        "sleeve",
+        "length",
+        "fashion",
+        "men",
+        "shirt",
+        "3 plain black crew neck t-shirts of different sleeve lengths"
+      ],
+      "stock": 3,
+      "price": "35.00",
+      "ratings": 4.5
+    },
+    {
+      "id": 12,
+      "images": [
+        "https://images.unsplash.com/photo-1618354691321-e851c56960d1?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Ryan Hoffman": "https://unsplash.com/@ryanhoffman007?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "705 printed black long sleeve t-shirt",
+      "type": ["Fashion", "Men"],
+      "keywords": [
+        "705",
+        "printed",
+        "black",
+        "long",
+        "sleeve",
+        "t-shirt",
+        "fashion",
+        "men",
+        "shirt",
+        "california",
+        "705 printed black long sleeve t-shirt"
+      ],
+      "stock": 32,
+      "price": "24.00",
+      "ratings": 4.5
+    },
+    {
+      "id": 13,
+      "images": [
+        "https://images.unsplash.com/photo-1618354691438-25bc04584c23?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Ryan Hoffman": "https://unsplash.com/@ryanhoffman007?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "705 Los Angeles printed short sleeve t-shirt",
+      "type": ["Fashion", "Men"],
+      "keywords": [
+        "705",
+        "Los",
+        "Angeles",
+        "Lost Angeles",
+        "printed",
+        "short",
+        "sleeve",
+        "t-shirt",
+        "fashion",
+        "men",
+        "shirt",
+        "california",
+        "705 Los Angeles printed short sleeve t-shirt"
+      ],
+      "stock": 24,
+      "price": "25.99",
+      "ratings": 4.5
+    },
+    {
+      "id": 14,
+      "images": [
+        "https://images.unsplash.com/photo-1618354691490-0de58a2c4c93?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1618354691249-18772bbac3a5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Ryan Hoffman": "https://unsplash.com/@ryanhoffman007?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "705 printed black vacuum flask",
+      "type": ["Kitchen"],
+      "keywords": [
+        "705",
+        "printed",
+        "black",
+        "vacuum",
+        "flask",
+        "kitchen",
+        "thermos",
+        "bottle",
+        "705 printed black vacuum flask"
+      ],
+      "stock": 20,
+      "price": "9.99",
+      "ratings": 5
+    },
+    {
+      "id": 15,
+      "images": [
+        "https://images.unsplash.com/photo-1544003484-3cd181d17917?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Karl Köhler": "https://unsplash.com/@karlkoehler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Black Mizu stainless steel tumbler",
+      "type": ["Kitchen"],
+      "keywords": [
+        "black",
+        "mizu",
+        "stainless",
+        "steel",
+        "tumbler",
+        "kitchen",
+        "thermos",
+        "flask",
+        "bottle",
+        "Black Mizu stainless steel tumbler"
+      ],
+      "stock": 23,
+      "price": "12.99",
+      "ratings": 4.5
+    },
+    {
+      "id": 16
     }
   ]
 }
