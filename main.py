@@ -11,7 +11,7 @@ app = Flask(__name__)
 # This route provides access to all the data in the json file.
 @app.route("/")
 def get_all_products():
-    # get and store all the parameters as variables
+    # get and store all the parameters as variables and assign any relevant variables as necessary
     filter_type = request.args.get("filter_type", default="all", type=str)
     page = request.args.get("page", default=1, type=int)
     per_page = request.args.get("per_page", default=10, type=int)
@@ -24,7 +24,7 @@ def get_all_products():
         products = data["products"]
         # filter products based on type if there is a filter_type value passed in that is not "all"
         if filter_type != "all":
-            products = [x for x in products if filter in x["type"]]
+            products = [x for x in products if filter_type in x["type"]]
         # return empty dict if no product and return status code 204 for no content
         if len(products) < start:
             return {}, 204
@@ -60,7 +60,7 @@ def get_search(query):
         products = data["products"]
         # filter products based on type if there is a filter_type value passed in that is not "all"
         if filter_type != "all":
-            products = [x for x in products if filter in x["type"]]
+            products = [x for x in products if filter_type in x["type"]]
         # get a list of all the "keywords" and remove any duplicates.
         all_keywords = [x["keywords"] for x in products]
         keywords = list(set(chain.from_iterable(all_keywords)))
@@ -68,20 +68,19 @@ def get_search(query):
         # then get rid of any possible duplicates in the list
         matched_keywords = get_close_matches(query, keywords, len(products), 0.7)
         matches = [x for x in products if len([y for y in matched_keywords if y in x["keywords"]]) != 0]
-        matches = list(set(matches))
         # use jaro_winkler to rate the relevance of the products and then sort products based on that rating.
         sort_lst = [{"product": x, "relevance": jaro_winkler(query, x["description"])} for x in matches]
         sort_lst.sort(key=itemgetter("relevance"), reverse=True)
         if len(sort_lst) < start:
             return {}, 204
-        num_products = len(products)
-        num_pages = ceil(num_products/per_page)
+        num_products = len(sort_lst)
+        num_pages = ceil(num_products/per_page) if per_page > num_products else num_products
         # get the list of products based on the per_page and page parameters and return them in json format with sttus code 404
         result = {
             "page": page,
             "pages": num_pages,
             "total_products": num_products,
-            "products": products[start:end] if len(products) >= end else products[start:]
+            "products": sort_lst[start:end] if len(sort_lst) >= end else sort_lst[start:]
             }
         # return the data in json format.
         return jsonify(result)
