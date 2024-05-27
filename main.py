@@ -2,7 +2,7 @@ import os
 from math import ceil
 from operator import itemgetter
 from itertools import chain
-from flask import Flask, json, jsonify, request
+from flask import Flask, request, json, jsonify
 from difflib import get_close_matches
 from Levenshtein import jaro_winkler
 
@@ -65,12 +65,12 @@ def get_search(query):
         all_keywords = [x["keywords"] for x in products]
         keywords = list(set(chain.from_iterable(all_keywords)))
         # use get_close_matches to get similar keywords and get all the products with those keywords.
-        # then get rid of any possible duplicates in the list
+        # then sort products based on relevance using jaro_winkler
         matched_keywords = get_close_matches(query, keywords, len(products), 0.7)
         matches = [x for x in products if len([y for y in matched_keywords if y in x["keywords"]]) != 0]
-        # use jaro_winkler to rate the relevance of the products and then sort products based on that rating.
         sort_lst = [{"product": x, "relevance": jaro_winkler(query, x["description"])} for x in matches]
         sort_lst.sort(key=itemgetter("relevance"), reverse=True)
+        # return empty dict if no relevant product and return status code 204 for no content
         if len(sort_lst) < start:
             return {}, 204
         num_products = len(sort_lst)
