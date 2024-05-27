@@ -23,7 +23,7 @@
         "black Canon EOS Rebel-series DSLR camera"
       ],
       "stock": 12,
-      "price": "479.99",
+      "price": 479.99,
       "ratings": 4.5
     },
     {
@@ -46,7 +46,7 @@
         "Fujifilm X-T10"
       ],
       "stock": 8,
-      "price": "627.71",
+      "price": 627.71,
       "ratings": 4.5
     },
     {
@@ -72,7 +72,7 @@
         "Goby electric toothbrush with charger, stand and travel cover"
       ],
       "stock": 17,
-      "price": "23.50",
+      "price": 23.49,
       "ratings": 5
     },
     {
@@ -95,7 +95,7 @@
         "LightWear Skin Care 0.5mm Titanium Rose Gold Derma Roller with box"
       ],
       "stock": 30,
-      "price": "16.95",
+      "price": 16.95,
       "ratings": 5
     },
     {
@@ -123,7 +123,7 @@
         "space gray Apple Watch with black Sports Band"
       ],
       "stock": 11,
-      "price": "170.00",
+      "price": 169.99,
       "ratings": 3.5
     },
     {
@@ -148,7 +148,7 @@
         "red and black sling bag"
       ],
       "stock": 6,
-      "price": "12.99",
+      "price": 12.99,
       "ratings": 4.5
     },
     {
@@ -174,7 +174,7 @@
         "charcoal Google Home mini"
       ],
       "stock": 14,
-      "price": "49.00",
+      "price": 49.99,
       "ratings": 4.5
     },
     {
@@ -200,7 +200,7 @@
         "coral Google Home mini speaker"
       ],
       "stock": 12,
-      "price": "51.29",
+      "price": 51.29,
       "ratings": 4.5
     },
     {
@@ -226,7 +226,7 @@
         "leather Leisara handbag"
       ],
       "stock": 9,
-      "price": "460.00",
+      "price": 459.99,
       "ratings": 5
     },
     {
@@ -249,7 +249,7 @@
         "leather Leisara handbag"
       ],
       "stock": 12,
-      "price": "66.45",
+      "price": 66.45,
       "ratings": 4.5
     },
     {
@@ -278,7 +278,7 @@
         "Slim fit plain white crew neck t-shirt"
       ],
       "stock": 24,
-      "price": "25.00",
+      "price": 24.99,
       "ratings": 4
     },
     {
@@ -307,7 +307,7 @@
         "3 plain black crew neck t-shirts of different sleeve lengths"
       ],
       "stock": 3,
-      "price": "35.00",
+      "price": 34.99,
       "ratings": 4.5
     },
     {
@@ -334,7 +334,7 @@
         "705 printed black long sleeve t-shirt"
       ],
       "stock": 32,
-      "price": "24.00",
+      "price": 24.99,
       "ratings": 4.5
     },
     {
@@ -363,7 +363,7 @@
         "705 Los Angeles printed short sleeve t-shirt"
       ],
       "stock": 24,
-      "price": "25.99",
+      "price": 25.99,
       "ratings": 4.5
     },
     {
@@ -376,7 +376,7 @@
         "Ryan Hoffman": "https://unsplash.com/@ryanhoffman007?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
       },
       "description": "705 printed black vacuum flask",
-      "type": ["Kitchen"],
+      "type": ["Kitchen", "Leisure"],
       "keywords": [
         "705",
         "printed",
@@ -384,12 +384,13 @@
         "vacuum",
         "flask",
         "kitchen",
+        "leisure",
         "thermos",
         "bottle",
         "705 printed black vacuum flask"
       ],
       "stock": 20,
-      "price": "9.99",
+      "price": 9.99,
       "ratings": 5
     },
     {
@@ -401,7 +402,7 @@
         "Karl Köhler": "https://unsplash.com/@karlkoehler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
       },
       "description": "Black Mizu stainless steel tumbler",
-      "type": ["Kitchen"],
+      "type": ["Kitchen", "Leisure"],
       "keywords": [
         "black",
         "mizu",
@@ -409,17 +410,225 @@
         "steel",
         "tumbler",
         "kitchen",
+        "leisure",
         "thermos",
         "flask",
         "bottle",
         "Black Mizu stainless steel tumbler"
       ],
       "stock": 23,
-      "price": "12.99",
+      "price": 12.99,
       "ratings": 4.5
     },
     {
-      "id": 16
+      "id": 16,
+      "images": [
+        "https://images.unsplash.com/photo-1616740540792-3daec604777d?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Jamaal Kareem": "https://unsplash.com/@maalcreates?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Yellow Hydro Flask Sports Bottle",
+      "type": ["Kitchen", "Leisure"],
+      "keywords": [
+        "yellow",
+        "hydro",
+        "flask",
+        "sports",
+        "bottle",
+        "kitchen",
+        "leisure",
+        "thermos",
+        "Yellow Hydro Flask Sports Bottle"
+      ],
+      "stock": 18,
+      "price": 12.99,
+      "ratings": 4.5
+    },
+    {
+      "id": 17,
+      "images": [
+        "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Joan Tran": "https://unsplash.com/@joanofarts?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Green leak proof, stainless steel water bottle",
+      "type": ["Kitchen", "Leisure"],
+      "keywords": [
+        "green",
+        "leak",
+        "proof",
+        "stainless",
+        "steel",
+        "water",
+        "bottle",
+        "kitchen",
+        "leisure",
+        "Green leak proof, stainless steel water bottle"
+      ],
+      "stock": 20,
+      "price": 30.99,
+      "ratings": 5
+    },
+    {
+      "id": 18,
+      "images": [
+        "https://images.unsplash.com/photo-1589365278144-c9e705f843ba?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Sara Groblechner": "https://unsplash.com/@groblechnersara?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Wood wrapped stainless steel kitchen flask",
+      "type": ["Kitchen"],
+      "keywords": [
+        "wood",
+        "wrapped",
+        "stainless",
+        "steel",
+        "kitchen",
+        "flask",
+        "thermos",
+        "Wood wrapped stainless steel kitchen flask"
+      ],
+      "stock": 12,
+      "price": 10.16,
+      "ratings": 3.5
+    },
+    {
+      "id": 19,
+      "images": [
+        "https://images.unsplash.com/photo-1618354691792-d1d42acfd860?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Ryan Hoffman": "https://unsplash.com/@ryanhoffman007?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "705 california black beanie",
+      "type": ["Fashion", "Men", "Women"],
+      "keywords": [
+        "705",
+        "california",
+        "black",
+        "beanie",
+        "fashion",
+        "men",
+        "women",
+        "hat",
+        "cap",
+        "705 california black beanie"
+      ],
+      "stock": 16,
+      "price": 4.99,
+      "ratings": 4
+    },
+    {
+      "id": 20,
+      "images": [
+        "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Mediamodifier": "https://unsplash.com/@mediamodifier?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Plain white baseball cap",
+      "type": ["Fashion", "Men", "Women"],
+      "keywords": [
+        "plain",
+        "white",
+        "baseball",
+        "cap",
+        "fashion",
+        "men",
+        "women",
+        "hat",
+        "Plain white baseball cap"
+      ],
+      "stock": 23,
+      "price": 3.99,
+      "ratings": 3.5
+    },
+    {
+      "id": 21,
+      "images": [
+        "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1622979135240-caa6648190b6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1525459819821-1c2d33189e23?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1525459571112-472991c82d74?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Remy Gieling": "https://unsplash.com/@gieling?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+        "Marc Mueller": "https://unsplash.com/@marcmll?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Oculus Go Standalone Virtual Reality Headset - 32GB",
+      "type": ["Technology"],
+      "keywords": [
+        "oculus",
+        "go",
+        "standalone",
+        "virtual",
+        "reality",
+        "headset",
+        "32GB",
+        "technology",
+        "tech",
+        "Oculus Go Standalone Virtual Reality Headset - 32GB"
+      ],
+      "stock": 8,
+      "price": 175.95,
+      "ratings": 5
+    },
+    {
+      "id": 22,
+      "images": [
+        "https://images.unsplash.com/photo-1551828046-f79b15499328?q=80&w=1387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1551806173-d7147a4e8b59?q=80&w=1382&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Alexander Andrews": "https://unsplash.com/@alex_andrews?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Nikon EM 35mm SLR Film Camera",
+      "type": ["Technology"],
+      "keywords": [
+        "nikon",
+        "em",
+        "35mm",
+        "slr",
+        "film",
+        "camera",
+        "technology",
+        "tech",
+        "Nikon EM 35mm SLR Film Camera"
+      ],
+      "stock": 2,
+      "price": 54.99,
+      "ratings": 5
+    },
+    {
+      "id": 23,
+      "images": [
+        "https://images.unsplash.com/photo-1527698266440-12104e498b76?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1589739900243-4b52cd9b104e?q=80&w=1408&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1524600870520-229b3f2cc406?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "image_by": {
+        "Kelly Sikkema": "https://unsplash.com/@kellysikkema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Space Gray 11-inch iPad pro with Apple Pencil",
+      "type": ["Technology"],
+      "keywords": [
+        "space",
+        "gray",
+        "11-inch",
+        "ipad",
+        "pro",
+        "apple",
+        "pencil",
+        "technology",
+        "tech",
+        "Space Gray 11-inch iPad pro with Apple Pencil"
+      ],
+      "stock": 26,
+      "price": 549.99,
+      "ratings": 4
     }
   ]
 }
