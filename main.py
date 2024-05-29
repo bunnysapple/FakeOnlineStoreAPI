@@ -42,7 +42,7 @@ def get_all_products():
 # This route allows for searches based on whether the query matches "keywords" of the product.
 # I've passed in a "query" variable into the get_search function.
 @app.route("/search/<query>/")
-def get_search(query):
+def get_search(query:str):
     # get all the parameters as variables and assign any relevant variables as necessary
     filter_type = request.args.get("filter_type", default="all", type=str)
     page = request.args.get("page", default=1, type=int)
@@ -84,6 +84,54 @@ def get_search(query):
             }
         # return the data in json format.
         return jsonify(result)
+
+@app.route("/id/<id>/")
+def get_id(id:int):
+    if not id.isdigit():
+        return {}, 404
+    id = int(id)
+    filename = os.path.join(os.path.dirname(__file__), "data.json")
+    with open(filename) as data:
+        data = json.load(data)
+        products = data["products"]
+        if id > len(products) or id < 0:
+            return {}, 204
+        results = {
+            "page": 1,
+            "pages": 1,
+            "total_products": 1,
+            "products": products[id]
+        }
+        return jsonify(results), 200
+
+@app.route("/similar/")
+def get_similar():
+    id = request.args.get("id", default=-1, type=int)
+    search = request.args.get("search", default="", type=str)
+    per_page = request.args.get("per_page", default=5, type=int)
+    filename = os.path.join(os.path.dirname(__file__), "data.json")
+    with open(filename) as data:
+        data = json.load(data)
+        products = data["products"]
+        search_for = next((x["keywords"] for x in products if x["id"] == id), search.split())
+        sort_lst = [
+            {"product": x,
+             "relevance": len(
+                 [
+                     y for y in search_for if y in x["keywords"]
+                 ]
+            )
+            } for x in products]
+        # sort_lst = [{"product": x, "relevance": sum(
+        #     jaro_winkler(z, y) for z in search_for for y in x["keywords"]
+        # )} for x in products]
+        sort_lst.sort(key=itemgetter("relevance"), reverse=True)
+        products = sort_lst[0:per_page+1] if len(sort_lst) >= per_page else sort_lst
+        results = {
+            "products": {"products": [x["product"] for x in products[1:]]}
+        }
+        return jsonify(results)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
