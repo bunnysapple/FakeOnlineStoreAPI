@@ -35,15 +35,15 @@
       "image_by": {
         "Math": "https://unsplash.com/@builtbymath?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
       },
-      "description": "Fujifilm X-T10",
+      "description": "Fujifilm X-T10 camera",
       "type": ["Technology"],
       "keywords": [
-        "frjifilm",
+        "fujifilm",
         "x-t10",
         "camera",
         "technology",
         "tech",
-        "Fujifilm X-T10"
+        "Fujifilm X-T10 camera"
       ],
       "stock": 8,
       "price": 627.71,
@@ -108,7 +108,7 @@
         "Daniel Korpai": "https://unsplash.com/@danielkorpai?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
       },
       "description": "space gray Apple Watch with black Sports Band",
-      "type": ["Technology", "Jewelery"],
+      "type": ["Technology"],
       "keywords": [
         "space",
         "apple",
