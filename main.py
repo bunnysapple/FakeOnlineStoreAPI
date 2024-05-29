@@ -134,12 +134,9 @@ def get_similar():
         # their relevance is based on how many of the keywords match
         sort_lst = [
             {"product": x,
-             "relevance": len(
-                 [
-                     y for y in search_for if y in x["keywords"]
-                 ]
-            )
-            } for x in products]
+             "relevance": len([y for y in search_for if y in x["keywords"]])
+            } for x in products
+            ]
         # sort the list based on the relevance and then get a limited number of them to be returned
         sort_lst.sort(key=itemgetter("relevance"), reverse=True)
         sort_lst = sort_lst[0:per_page+1] if len(sort_lst) >= per_page else sort_lst
