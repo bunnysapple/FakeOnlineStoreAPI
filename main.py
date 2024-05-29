@@ -8,7 +8,7 @@ from Levenshtein import jaro_winkler
 
 app = Flask(__name__)
 
-# This route provides access to all the data in the json file.
+# This route provides access to all the data in the json file
 @app.route("/")
 def get_all_products():
     # get and store all the parameters as variables and assign any relevant variables as necessary
@@ -30,7 +30,7 @@ def get_all_products():
             return {}, 204
         num_products = len(products)
         num_pages = ceil(num_products/per_page)
-        # get the list of products based on the per_page and page parameters and return them in json format with sttus code 404
+        # get the list of products based on the per_page and page parameters
         result = {
             "page": page,
             "pages": num_pages,
@@ -39,8 +39,8 @@ def get_all_products():
             }
         return jsonify(result), 200
 
-# This route allows for searches based on whether the query matches "keywords" of the product.
-# I've passed in a "query" variable into the get_search function.
+# This route allows for searches based on whether the query matches "keywords" of the product
+# You have to pass in the query/search through the URL path
 @app.route("/search/<query>/")
 def get_search(query:str):
     # get all the passed in values as variables and assign any relevant variables as necessary
@@ -61,10 +61,10 @@ def get_search(query:str):
         # filter products based on type if there is a filter_type value passed in that is not "all"
         if filter_type != "all":
             products = [x for x in products if filter_type in x["type"]]
-        # get a list of all the "keywords" and remove any duplicates.
+        # get a list of all the "keywords" and remove any duplicates
         all_keywords = [x["keywords"] for x in products]
         keywords = list(set(chain.from_iterable(all_keywords)))
-        # use get_close_matches to get similar keywords and get all the products with those keywords.
+        # use get_close_matches to get similar keywords and get all the products with those keywords
         # then sort products based on relevance using jaro_winkler
         matched_keywords = get_close_matches(query, keywords, len(products), 0.7)
         matches = [x for x in products if len([y for y in matched_keywords if y in x["keywords"]]) != 0]
@@ -82,11 +82,10 @@ def get_search(query:str):
             "total_products": num_products,
             "products": sort_lst[start:end] if len(sort_lst) >= end else sort_lst[start:]
             }
-        # return the result in json format.
         return jsonify(result)
 
 # This route allows for you to search for a specific product using it's id
-# You have to pass in the id through the URL
+# You have to pass in the id through the URL path
 @app.route("/id/<id>/")
 def get_id(id:int):
     # all the ids that I've used in the data are integers and so the id passed in must be a numeric string
