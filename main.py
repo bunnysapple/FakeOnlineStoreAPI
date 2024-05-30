@@ -70,6 +70,7 @@ def get_search(query:str):
         matches = [x for x in products if len([y for y in matched_keywords if y in x["keywords"]]) != 0]
         sort_lst = [{"product": x, "relevance": jaro_winkler(query, x["description"])} for x in matches]
         sort_lst.sort(key=itemgetter("relevance"), reverse=True)
+        sort_lst = [product["product"] for product in sort_lst]
         # return empty dict if no relevant product and return status code 204 for no content
         if len(sort_lst) < start:
             return {}, 204
