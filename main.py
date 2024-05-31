@@ -15,6 +15,7 @@ def get_all_products():
     filter_type = request.args.get("filter_type", default="all", type=str)
     page = request.args.get("page", default=1, type=int)
     per_page = request.args.get("per_page", default=10, type=int)
+    price = request.args.get("filter_price", default="none", type=str)
     start = page * per_page - per_page
     end = page * per_page
     # get the file path for data.json file and open and load the json file as data
@@ -28,6 +29,9 @@ def get_all_products():
         # return empty dict if no product and return status code 204 for no content
         if len(products) < start:
             return {}, 204
+        # if the price/filter_price parameter is ascending or descending, sort the products based on their price
+        if price in ["ascending", "descending"]:
+            products.sort(key=itemgetter("price"), reverse=price == "descending")
         num_products = len(products)
         num_pages = ceil(num_products/per_page)
         # get the list of products based on the per_page and page parameters
@@ -47,6 +51,7 @@ def get_search(query:str):
     filter_type = request.args.get("filter_type", default="all", type=str)
     page = request.args.get("page", default=1, type=int)
     per_page = request.args.get("per_page", default=10, type=int)
+    sort_products = request.args.get("filter", default="relevance", type=str)
     if per_page > 50:
         per_page = 50
     elif per_page < 10:
@@ -65,12 +70,21 @@ def get_search(query:str):
         all_keywords = [x["keywords"] for x in products]
         keywords = list(set(chain.from_iterable(all_keywords)))
         # use get_close_matches to get similar keywords and get all the products with those keywords
-        # then sort products based on relevance using jaro_winkler
         matched_keywords = get_close_matches(query, keywords, len(products), 0.7)
         matches = [x for x in products if len([y for y in matched_keywords if y in x["keywords"]]) != 0]
-        sort_lst = [{"product": x, "relevance": jaro_winkler(query, x["description"])} for x in matches]
-        sort_lst.sort(key=itemgetter("relevance"), reverse=True)
-        sort_lst = [product["product"] for product in sort_lst]
+        sort_lst = []
+        if sort_products == "descending":
+            # sort products in descending order of price
+            sort_lst = sorted(matches, key=itemgetter("price"), reverse=True)
+        elif sort_products == "ascending":
+            # sort products in ascending order of price
+            sort_lst = sorted(matches, key=itemgetter("price"))
+        else:
+            # sort products based on relevance using jaro_winkle
+            sort_lst = [{"product": x, "relevance": jaro_winkler(query, x["description"])} for x in matches]
+            sort_lst.sort(key=itemgetter("relevance"), reverse=True)
+            sort_lst = [match["product"] for match in sort_lst]
+        
         # return empty dict if no relevant product and return status code 204 for no content
         if len(sort_lst) < start:
             return {}, 204
