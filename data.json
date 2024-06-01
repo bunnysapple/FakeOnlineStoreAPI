@@ -562,7 +562,7 @@
         "Marc Mueller": "https://unsplash.com/@marcmll?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
       },
       "description": "Oculus Go Standalone Virtual Reality Headset - 32GB",
-      "type": ["Technology"],
+      "type": ["Technology", "Leisure"],
       "keywords": [
         "oculus",
         "go",
@@ -573,6 +573,7 @@
         "32GB",
         "technology",
         "tech",
+        "leisure",
         "Oculus Go Standalone Virtual Reality Headset - 32GB"
       ],
       "stock": 8,
@@ -831,6 +832,68 @@
       "stock": 4,
       "price": 74.99,
       "ratings": 4
+    },
+    {
+      "id": 31,
+      "images": [
+        "https://i.postimg.cc/DwBHq5QG/alexander-andrews-WLAW-NGc-Miw-unsplash.jpg",
+        "https://i.postimg.cc/CK5tJDJQ/komarov-egor-y-Hb9-T-i-D3v8-unsplash.jpg",
+        "https://i.postimg.cc/0N444QB2/komarov-egor-ult-Wgsc9rg-unsplash.jpg",
+        "https://i.postimg.cc/mDFnWsv3/komarov-egor-ECHU29-RXMhs-unsplash.jpg"
+      ],
+      "image_by": {
+        "Alexander Andrews": "https://unsplash.com/@alex_andrews?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+        "Komarov Egor 🇺🇦": "https://unsplash.com/@komarov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Valve Steam Deck 512GB Handheld Console - Black",
+      "type": ["Technology", "Leisure"],
+      "keywords": [
+        "valve",
+        "steam",
+        "deck",
+        "steamdeck",
+        "512gb",
+        "handheld",
+        "console",
+        "black",
+        "technology",
+        "tech",
+        "leisure",
+        "Valve Steam Deck 512GB Handheld Console - Black"
+      ],
+      "stock": 9,
+      "price": 415.99,
+      "ratings": 3.5
+    },
+    {
+      "id": 32,
+      "images": [
+        "https://i.postimg.cc/CLfxrBrd/rahul-chakraborty-p-MBf5l-c-GEQ-unsplash.jpg",
+        "https://i.postimg.cc/Jn6zvbWH/rahul-chakraborty-Zz7uo92hc-LU-unsplash.jpg",
+        "https://i.postimg.cc/fyVRNJw2/rahul-chakraborty-3l-Yooa-f-YTk-unsplash.jpg",
+        "https://i.postimg.cc/FzwssNz9/rahul-chakraborty-mk51b-ARJe-Ko-unsplash.jpg",
+        "https://i.postimg.cc/DfNzcdgt/rahul-chakraborty-Cw-JKMKv-Jwd-Y-unsplash.jpg"
+      ],
+      "image_by": {
+        "Rahul Chakraborty": "https://unsplash.com/@hckmstrrahul?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Opal C1, 4K USB-C Webcam - White",
+      "type": ["Technology"],
+      "keywords": [
+        "opal",
+        "c1",
+        "4k",
+        "usb-c",
+        "webcam",
+        "camera",
+        "white",
+        "technology",
+        "tech",
+        "Opal C1, 4K USB-C Webcam - White"
+      ],
+      "stock": 3,
+      "price": 299.99,
+      "ratings": 5
     }
   ]
 }
