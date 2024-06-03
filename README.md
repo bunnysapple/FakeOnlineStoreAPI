@@ -3,10 +3,14 @@
 ## The 4 Main Pathways
 
 - ### "/"
-  parameters:<br />
-  | `filter_type` | can filter based on the type of the products. eg "Technology", "Leisure", etc | _optional_ |<br/>
-  | `per*page` | tells api how many products to retreive per page. default is 10, min is 10 and max is 50 | _optional_ |<br/>
-  | `page` | tells api which page of thelist of products to retreive. default is 1 | _optional_ |<br/>
+<br/>
+
+  | Parameters | | |
+  | :---: | --- | --- |
+  | `filter_type` | can filter based on the type of the products. eg "Technology", "Leisure", etc | _optional_ |
+  | `filter_price` | can rank products based on price in descending or ascending order | _optional_ |
+  | `per*page` | tells api how many products to retreive per page. default is 10, min is 10 and max is 50 | _optional_ |
+  | `page` | tells api which page of thelist of products to retreive. default is 1 | _optional_ |
 
 ## Image Shoutout
 
