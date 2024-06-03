@@ -1,6 +1,16 @@
 # Fake Online Store API
 
-# Image Shoutout
+## Pathways
+
+There are 4 main url pathways that can be used to request products:
+
+- ### "/":
+  parameters:<br />
+  -- "filter_type": can filter based on the type of the products. eg "Technology", "Leisure", etc
+  -- "per_page": tells api how many products to retreive per page. default is 10, min is 10 and max is 50
+  -- "page": tells api which page of thelist of products to retreive. default is 1
+
+## Image Shoutout
 
 - Photo by <a href="https://unsplash.com/@a_hutchings5894?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andrew Hutchings</a> on <a href="https://unsplash.com/photos/black-canon-eos-rebel-series-dslr-camera-W2Dta_Yiwfw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a><br />
 - Photo by <a href="https://unsplash.com/@neonbrand?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kenny Eliason</a> on <a href="https://unsplash.com/photos/person-carrying-canon-dslr-camera-3ngFVZVU_LE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a><br />
