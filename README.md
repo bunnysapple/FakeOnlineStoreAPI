@@ -4,11 +4,11 @@
 
 There are 4 main url pathways that can be used to request products:
 
-- ### "/":
+- ### "/"
   parameters:<br />
-  -- "filter_type": can filter based on the type of the products. eg "Technology", "Leisure", etc
-  -- "per_page": tells api how many products to retreive per page. default is 10, min is 10 and max is 50
-  -- "page": tells api which page of thelist of products to retreive. default is 1
+  -- "filter_type": can filter based on the type of the products. eg "Technology", "Leisure", etc<br/>
+  -- "per_page": tells api how many products to retreive per page. default is 10, min is 10 and max is 50<br/>
+  -- "page": tells api which page of thelist of products to retreive. default is 1<br/>
 
 ## Image Shoutout
 
