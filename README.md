@@ -5,12 +5,12 @@
 - ### "/"
 <br/>
 
-  | Parameters | | |
+  | Parameters | Explanation | _optional_ / _required_ |
   | :---: | --- | --- |
-  | `filter_type` | can filter based on the type of the products. eg "Technology", "Leisure", etc | _optional_ |
-  | `filter_price` | can rank products based on price in descending or ascending order | _optional_ |
-  | `per*page` | tells api how many products to retreive per page. default is 10, min is 10 and max is 50 | _optional_ |
-  | `page` | tells api which page of thelist of products to retreive. default is 1 | _optional_ |
+  | `filter_type` | Filter based on the "type" of the products. eg "Technology", "Leisure", etc | _optional_ |
+  | `filter_price` | The ranking of the products based on price. Can be "ascending" or "descending". Default is none. | _optional_ |
+  | `per_page` | The number of products to be retreived per request. default is 10, min is 10 and max is 50 | _optional_ |
+  | `page` | the page number for the list of products to be retreived | _optional_ |
 
 ## Image Shoutout
 
