@@ -4,9 +4,9 @@
 
 - ### "/"
   parameters:<br />
-  | "filter*type" | can filter based on the type of the products. eg "Technology", "Leisure", etc | \_optional* |
-  | "per*page" | tells api how many products to retreive per page. default is 10, min is 10 and max is 50 | \_optional* |
-  | "page" | tells api which page of thelist of products to retreive. default is 1 | _optional_ |
+  | `filter_type` | can filter based on the type of the products. eg "Technology", "Leisure", etc | _optional_ |<br/>
+  | `per*page` | tells api how many products to retreive per page. default is 10, min is 10 and max is 50 | _optional_ |<br/>
+  | `page` | tells api which page of thelist of products to retreive. default is 1 | _optional_ |<br/>
 
 ## Image Shoutout
 
