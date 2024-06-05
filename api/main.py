@@ -15,7 +15,7 @@ def get_all_products():
     filter_type = request.args.get("filter_type", default="all", type=str)
     page = request.args.get("page", default=1, type=int)
     per_page = request.args.get("per_page", default=10, type=int)
-    price = request.args.get("filter_price", default="none", type=str)
+    price = request.args.get("price", default="none", type=str)
     start = page * per_page - per_page
     end = page * per_page
     # get the file path for data.json file and open and load the json file as data
@@ -51,7 +51,7 @@ def get_search(query:str):
     filter_type = request.args.get("filter_type", default="all", type=str)
     page = request.args.get("page", default=1, type=int)
     per_page = request.args.get("per_page", default=10, type=int)
-    sort_products = request.args.get("filter", default="relevance", type=str)
+    price = request.args.get("price", default="relevance", type=str)
     if per_page > 50:
         per_page = 50
     elif per_page < 10:
@@ -73,10 +73,10 @@ def get_search(query:str):
         matched_keywords = get_close_matches(query, keywords, len(products), 0.7)
         matches = [x for x in products if len([y for y in matched_keywords if y in x["keywords"]]) != 0]
         sort_lst = []
-        if sort_products == "descending":
+        if price == "descending":
             # sort products in descending order of price
             sort_lst = sorted(matches, key=itemgetter("price"), reverse=True)
-        elif sort_products == "ascending":
+        elif price == "ascending":
             # sort products in ascending order of price
             sort_lst = sorted(matches, key=itemgetter("price"))
         else:
@@ -132,7 +132,7 @@ def get_id(id:int):
 def get_similar():
     # get all the passed in values as variables and assign any relevant variables as necessary
     id = request.args.get("id", default=-1, type=int)
-    search = request.args.get("search", default="", type=str)
+    keywords = request.args.get("keywords", default="", type=str)
     per_page = request.args.get("per_page", default=5, type=int)
     if per_page > 10:
         per_page = 10
@@ -144,7 +144,7 @@ def get_similar():
         data = json.load(data)
         products = data["products"]
         # get the keywords that are to be compared to find closely related products
-        search_for = next((x["keywords"] for x in products if x["id"] == id), search.split())
+        search_for = next((x["keywords"] for x in products if x["id"] == id), keywords.split())
         # get a list of dicts wich contain the product and a score on their relevance
         # their relevance is based on how many of the keywords match
         sort_lst = [

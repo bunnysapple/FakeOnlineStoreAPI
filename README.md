@@ -4,12 +4,48 @@
 ## The 4 Main Pathways
 
 - ### "/"
+<br/>
+
   | Parameters | Explanation | _optional_ / _required_ |
-  | :---: | --- | --- |
+  | :---: | --- | :---: |
   | `filter_type` | Filter based on the "type" of the products. eg "Technology", "Leisure", etc | _optional_ |
-  | `filter_price` | The ranking of the products based on price. Can be "ascending" or "descending". Default is none. | _optional_ |
-  | `per_page` | The number of products to be retreived per request. default is 10, min is 10 and max is 50 | _optional_ |
+  | `price` | The ranking of the products based on price. Can be "ascending" or "descending". Default is none. | _optional_ |
+  | `per_page` | The number of products to be retreived per request. Default value is 10. Acceptable values are between 10 and 50. | _optional_ |
   | `page` | the page number for the list of products to be retreived | _optional_ |
+<br />
+
+- ### "/search/\<query\>"
+<br/>
+
+  | `<query>` | Pass is the search term through the url path | _required_ |
+  | :---: | --- | :---: |
+
+<br />
+<br />
+
+  | Parameters | Explanation | _optionsl_ / _required_ |
+  | :---: | --- | :---: |
+  | `filter_type` | Filter based on the "type" of the products. eg "Technology", "Leisure", etc | _optional_ |
+  | `price` | The ranking of the products based on price. Can be "ascending" or "descending". Default is "relevance". | _optional_ |
+  | `per_page` | The number of products to be retreived per request. Default is 10. Acceptable values are between 10 and 50. | _optional_ |
+  | `page` | the page number for the list of products to be retreived | _optional_ |
+<br />
+
+- ### "/id/\<id\>/"
+<br />
+
+  | `<id>` | Pass in the product id through the url path | _required_ |
+  | :---: | --- | :---: |
+<br/>
+
+- ### "/similar/"
+<br />
+
+  | Parameters | Explanation | _optional_ / _required_ |
+  | :---: | --- | :--- |
+  | `id` | Uses the keywords from the product with the passed in id to search for similar products | _required_* |
+  | `keywords` | Keywords can be passed in and products with these keywords are displayed | _required_* |
+  | `per_page` | The number of products to be retreived per request. Default is 5. Acceptable values are between 5 and 10.
 
 ## Image Shoutout
 
