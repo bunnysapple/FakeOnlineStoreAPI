@@ -49,7 +49,7 @@
 
 <br />
 
-[^*]: Only one of `id` r `keywords` should be passed in. If both is passed in, priority will be given to `id`.
+[^*]: Only one of `id` or `keywords` should be passed in. If both is passed in, priority will be given to `id`.
 
 ## Image Shoutout
 
