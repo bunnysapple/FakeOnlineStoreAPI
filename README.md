@@ -43,9 +43,13 @@
 
   | Parameters | Explanation | _optional_ / _required_ |
   | :---: | --- | :--- |
-  | `id` | Uses the keywords from the product with the passed in id to search for similar products | _required_* |
-  | `keywords` | Keywords can be passed in and products with these keywords are displayed | _required_* |
-  | `per_page` | The number of products to be retreived per request. Default is 5. Acceptable values are between 5 and 10.
+  | `id` | Uses the keywords from the product with the passed in id to search for similar products | _required_[^*] |
+  | `keywords` | Keywords can be passed in and products with these keywords are displayed | _required_[^*] |
+  | `per_page` | The number of products to be retreived per request. Default is 5. Acceptable values are between 5 and 10. | _optional_ |
+
+<br />
+
+[^*]: Only one of `id` r `keywords` should be passed in. If both is passed in, priority will be given to `id`.
 
 ## Image Shoutout
 
