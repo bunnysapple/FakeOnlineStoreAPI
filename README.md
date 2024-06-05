@@ -1,10 +1,9 @@
 # Fake Online Store API
+<br />
 
 ## The 4 Main Pathways
 
 - ### "/"
-<br/>
-
   | Parameters | Explanation | _optional_ / _required_ |
   | :---: | --- | --- |
   | `filter_type` | Filter based on the "type" of the products. eg "Technology", "Leisure", etc | _optional_ |
