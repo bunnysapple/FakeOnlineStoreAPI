@@ -89,7 +89,7 @@ def get_search(query:str):
         if len(sort_lst) < start:
             return {}, 204
         num_products = len(sort_lst)
-        num_pages = ceil(num_products/per_page) if per_page > num_products else num_products
+        num_pages = ceil(num_products/per_page)
         # get the list of products based on the per_page and page parameters and return them in json format with sttus code 404
         result = {
             "page": page,
