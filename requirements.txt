@@ -1,4 +1,3 @@
-operator
 itertools
 flask
 difflib
