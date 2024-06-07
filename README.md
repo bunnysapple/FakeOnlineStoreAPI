@@ -56,7 +56,7 @@ This is a flask api with limited function for getting filtered data on a variety
 
 <br />
 
-[^*]: Only one of `id` or `keywords` should be passed in. If both is passed in, priority will be given to `id`.
+<p>[^*]: Only one of `id` or `keywords` should be passed in. If both is passed in, priority will be given to `id`.</p>
 
 ## Image Shoutout
 
