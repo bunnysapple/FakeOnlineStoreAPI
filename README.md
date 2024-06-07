@@ -54,6 +54,7 @@ This is a flask api with limited function for getting filtered data on a variety
   | `keywords` | Keywords can be passed in and products with these keywords are displayed | _required_<sup>[1](#1)</sup> |
   | `per_page` | The number of products to be retreived per request. Default is 5. Acceptable values are between 5 and 10. | _optional_ |
 
+<br />
   <p id="1"></p>
 
    <sup>[1](#2)</sup> Only one of `id` or `keywords` should be passed in. If both is passed in, priority will be given to `id`.
