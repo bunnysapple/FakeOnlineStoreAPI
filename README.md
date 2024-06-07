@@ -1,4 +1,11 @@
 # Fake Online Store API
+
+This is a flask api with limited function for getting filtered data on a variety of products. The dataset was self made and writted out by hand, for the most part, and is limited to a .json file. I am not using any databases for this api as I do not feel it is necessary for this small project. This is part of a larger project "FakeOnlineStore" that I hope to start on soon.
+
+  Currently, I do not wish to provide access to this api for anyone and it is definitely not fit for commercial use in any form. But, if you are interested in using this api in your project, you are free to clone this repo, host it yourself and freely make any changes to it as you see fit.
+
+  For now, I wish to move my attention away to learning new things and will be updating the data.json file semi-frquently but not to the extent that I have been earlier. This is not finished as I am not satisfied with the amount of products I have now and I will continue to work on that, but I believe that my main.py file is pretty satisfactory and I have little to change and so it's unlikely to be changed much in the future.
+
 <br />
 
 ## The 4 Main Pathways
