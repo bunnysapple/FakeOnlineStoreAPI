@@ -50,13 +50,17 @@ This is a flask api with limited function for getting filtered data on a variety
 
   | Parameters | Explanation | _optional_ / _required_ |
   | :---: | --- | :--- |
-  | `id` | Uses the keywords from the product with the passed in id to search for similar products | <p markdown="*">_required_[^*]</p> |
-  | `keywords` | Keywords can be passed in and products with these keywords are displayed | <p markdown="*">_required_[^*]</p> |
+  | `id` | Uses the keywords from the product with the passed in id to search for similar products | _required_<sup>[1](#1)</sup><p id="2"></p> |
+  | `keywords` | Keywords can be passed in and products with these keywords are displayed | _required_<sup>[1](#1)</sup> |
   | `per_page` | The number of products to be retreived per request. Default is 5. Acceptable values are between 5 and 10. | _optional_ |
 
 <br />
 
-[^*]: Only one of `id` or `keywords` should be passed in. If both is passed in, priority will be given to `id`.
+  <p id="1"></p>
+  <br />
+
+   <sup>[1](#2)</sup> Only one of `id` or `keywords` should be passed in. If both is passed in, priority will be given to `id`.
+
 
 ## Image Shoutout
 
