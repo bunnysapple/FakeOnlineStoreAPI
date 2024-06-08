@@ -982,6 +982,60 @@
       "stock": 13,
       "price": 104.99,
       "ratings": 4.5
+    },
+    {
+      "id": 36,
+      "images": [
+        "https://i.postimg.cc/pTsLtFx9/glenna-haug-a-Yr-Otqypmho-unsplash.jpg",
+        "https://i.postimg.cc/zv3XDGXx/glenna-haug-Du-NXXPScb-JM-unsplash.jpg"
+      ],
+      "image_by": {
+        "Glenna Haug": "https://unsplash.com/@glennclaire?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Act+ Acre Restorative Hair Mask",
+      "type": ["Hygeine"],
+      "keywords": [
+        "act",
+        "act+",
+        "acre",
+        "restorative",
+        "hair",
+        "mask",
+        "hygeine",
+        "Act+ Acre Restorative Hair Mask"
+      ],
+      "stock": 17,
+      "price": 35.99,
+      "ratings": 4.5
+    },
+    {
+      "id": 37,
+      "images": [
+        "https://i.postimg.cc/g2bdQDRS/lina-verovaya-Bib-Jj-O4s-Yr-I-unsplash.jpg",
+        "https://i.postimg.cc/RZ19BHLM/lina-verovaya-F39-Yk-FM-fg-unsplash.jpg"
+      ],
+      "image_by": {
+        "Lina Verovaya": "https://unsplash.com/@linaverovaya?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      },
+      "description": "Everyday Humans - SPF50 'Oh My Bod' Body Sunscreen Lotion 100ml",
+      "type": ["Hygeine"],
+      "keywords": [
+        "everyday",
+        "humans",
+        "spf50",
+        "oh",
+        "my",
+        "bod",
+        "body",
+        "sunscreen",
+        "lotion",
+        "100ml",
+        "hygeine",
+        "Everyday Humans - SPF50 'Oh My Bod' Body Sunscreen Lotion 100ml"
+      ],
+      "stock": 9,
+      "price": 15.68,
+      "ratings": 4.5
     }
   ]
 }
