@@ -58,15 +58,7 @@ This is a flask api with limited function for getting filtered data on a variety
           "Technology"
         ]
       },
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      "..."
     ],
     "total_products": 18
   }
