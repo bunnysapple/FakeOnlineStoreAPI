@@ -20,6 +20,58 @@ This is a flask api with limited function for getting filtered data on a variety
   | `per_page` | The number of products to be retreived per request. Default value is 10. Acceptable values are between 10 and 50. | _optional_ |
   | `page` | the page number for the list of products to be retreived | _optional_ |
 <br />
+  
+  Example result:
+  ```json
+  {
+    "page": 1,
+    "pages": 2,
+    "products": [
+      {
+        "description": "White and Black Amazon Echo Dot 2 smart speaker",
+        "id": 27,
+        "image_by": {
+          "Find Experts at Kilta.com": "https://unsplash.com/@kilta?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+          "Rahul Chakraborty": "https://unsplash.com/@hckmstrrahul?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        },
+        "images": [
+          "https://i.postimg.cc/0ytTzYsN/rahul-chakraborty-n-Gzv-Ze1i-WOY-unsplash.jpg",
+          "https://i.postimg.cc/4NGkq4PX/rahul-chakraborty-E-m-HYosg98k-unsplash.jpg",
+          "https://i.postimg.cc/PqTjDXL6/find-experts-at-kilta-com-db4jr-Nv-Zh-OQ-unsplash.jpg"
+        ],
+        "keywords": [
+          "white",
+          "black",
+          "amazon",
+          "echo",
+          "dot",
+          "smart",
+          "speaker",
+          "technology",
+          "tech",
+          "White and Black Amazon Echo Dot 2 smart speaker"
+        ],
+        "price": 19.99,
+        "ratings": 4,
+        "stock": 24,
+        "type": [
+          "Technology"
+        ]
+      },
+      [...],
+      [...],
+      [...],
+      [...],
+      [...],
+      [...],
+      [...],
+      [...],
+      [...]
+    ],
+    "total_products": 18
+  }
+  ```
+  <br />
 
 - ### "/search/\<query\>"
 <br/>
