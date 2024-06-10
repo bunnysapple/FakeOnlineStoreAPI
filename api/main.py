@@ -164,7 +164,7 @@ def get_similar():
             "page": 1,
             "pages": 1,
             "per_page": per_page,
-            "products": {"products": [x["product"] for x in sort_lst[1:]]},
+            "products": [x["product"] for x in sort_lst[1:]],
             "total_products": per_page
         }
         return jsonify(results), 200
