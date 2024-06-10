@@ -38,6 +38,7 @@ def get_all_products():
         result = {
             "page": page,
             "pages": num_pages,
+            "per_page": per_page,
             "total_products": num_products,
             "products": products[start:end] if len(products) >= end else products[start:]
             }
@@ -94,6 +95,7 @@ def get_search(query:str):
         result = {
             "page": page,
             "pages": num_pages,
+            "per_page": per_page,
             "total_products": num_products,
             "products": sort_lst[start:end] if len(sort_lst) >= end else sort_lst[start:]
             }
@@ -121,8 +123,11 @@ def get_id(id:int):
         result = {
             "page": 1,
             "pages": 1,
+            "per_page": 1,
             "total_products": 1,
-            "products": products[id]
+            "products": [
+                products[id]
+                ]
         }
         return jsonify(result), 200
 
@@ -156,7 +161,11 @@ def get_similar():
         sort_lst.sort(key=itemgetter("relevance"), reverse=True)
         sort_lst = sort_lst[0:per_page+1] if len(sort_lst) >= per_page else sort_lst
         results = {
-            "products": {"products": [x["product"] for x in sort_lst[1:]]}
+            "page": 1,
+            "pages": 1,
+            "per_page": per_page,
+            "products": {"products": [x["product"] for x in sort_lst[1:]]},
+            "total_products": per_page
         }
         return jsonify(results), 200
 
