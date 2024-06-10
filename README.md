@@ -138,8 +138,8 @@ Example Product:
 
   Example Result:
 
-  Search For: `apple`
-  
+  `<query>` : `apple`
+
   ```json
   {
     "page": 1,
@@ -183,6 +183,7 @@ Example Product:
     "total_products": 6
   }
   ```
+<br />
 
 - ### "/id/\<id\>/"
 <br />
@@ -190,6 +191,49 @@ Example Product:
   | `<id>` | Pass in the product id through the url path | _required_ |
   | :---: | --- | :---: |
 <br/>
+
+  Example Result:
+
+  `<id>` : `1`
+
+  ```json
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 1,
+    "products": [
+      {
+        "description": "Fujifilm X-T10 camera",
+        "id": 1,
+        "image_by": {
+          "Math": "https://unsplash.com/@builtbymath?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        },
+        "images": [
+          "https://i.postimg.cc/YCp7G2Ld/math-In-K0-X-GDjr-Q-unsplash.jpg",
+          "https://i.postimg.cc/8PdDzfcF/math-3-Qb-OHeq-Zn-E4-unsplash.jpg",
+          "https://i.postimg.cc/vZ3sWRWb/math-k-POia9-E2d-NI-unsplash.jpg",
+          "https://i.postimg.cc/fbyhCHKX/math-lf-Rlv3nuf78-unsplash.jpg"
+        ],
+        "keywords": [
+          "fujifilm",
+          "x-t10",
+          "camera",
+          "technology",
+          "tech",
+          "Fujifilm X-T10 camera"
+        ],
+        "price": 627.71,
+        "ratings": 4.5,
+        "stock": 8,
+        "type": [
+          "Technology"
+        ]
+      }
+    ],
+    "total_products": 1
+  }
+  ```
+<br />
 
 - ### "/similar/"
 <br />
@@ -204,6 +248,51 @@ Example Product:
 
    <sup id="1">[1](#2)</sup> Only one of `id` or `keywords` should be passed in. If both is passed in, priority will be given to `id`.
 
+<br />
+
+  Exaple Result:
+
+  `id` = `1`
+
+  ```json
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 5,
+    "products": [
+      {
+        "description": "black Canon EOS Rebel-series DSLR camera",
+        "id": 0,
+        "image_by": {
+          "Andrew Hutchings": "https://unsplash.com/@a_hutchings5894?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        },
+        "images": [
+          "https://i.postimg.cc/k5v7Y633/andrew-hutchings-W2-Dta-Yiwfw-unsplash.jpg"
+        ],
+        "keywords": [
+          "canon",
+          "eos",
+          "rebel",
+          "series",
+          "rebel-series",
+          "dslr",
+          "camera",
+          "technology",
+          "tech",
+          "black Canon EOS Rebel-series DSLR camera"
+        ],
+        "price": 479.99,
+        "ratings": 4.5,
+        "stock": 12,
+        "type": [
+          "Technology"
+        ]
+      },
+      "..."
+    ],
+    "total_products": 5
+  }
+  ```
 <br />
 
 ## Image Shoutout
