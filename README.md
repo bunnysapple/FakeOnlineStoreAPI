@@ -122,7 +122,7 @@ Example Product:
 - ### "/search/\<query\>"
 <br/>
 
-  | `<query>` | Pass is the search term through the url path | _required_ |
+  | `<query>` | Pass in the search term through the url path | _required_ |
   | :---: | --- | :---: |
 
 <br />
@@ -135,6 +135,54 @@ Example Product:
   | `per_page` | The number of products to be retreived per request. Default is 10. Acceptable values are between 10 and 50. | _optional_ |
   | `page` | the page number for the list of products to be retreived | _optional_ |
 <br />
+
+  Example Result:
+
+  Search For: `apple`
+  
+  ```json
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 10,
+    "products": [
+      {
+        "description": "Black Apple Homepod smart speaker",
+        "id": 25,
+        "image_by": {
+          "Howard Bouchevereau": "https://unsplash.com/@howardbouchevereau?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+          "Mark Tegethoff": "https://unsplash.com/@tegethoff?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+          "Przemyslaw Marczynski": "https://unsplash.com/@pemmax?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        },
+        "images": [
+          "https://i.postimg.cc/MZNJDbMf/howard-bouchevereau-876c-F8-YBrg-unsplash.jpg",
+          "https://i.postimg.cc/J0Nw0Srw/przemyslaw-marczynski-04-TYM24-Wi2c-unsplash.jpg",
+          "https://i.postimg.cc/pVFR36tJ/mark-tegethoff-f4qyr3-FWB1w-unsplash.jpg"
+        ],
+        "keywords": [
+          "black",
+          "apple",
+          "home",
+          "pod",
+          "homepod",
+          "smart",
+          "speaker",
+          "technology",
+          "tech",
+          "Black Apple Homepod smart speaker"
+        ],
+        "price": 299.99,
+        "ratings": 4.5,
+        "stock": 15,
+        "type": [
+          "Technology"
+        ]
+      },
+      "...",
+    ],
+    "total_products": 6
+  }
+  ```
 
 - ### "/id/\<id\>/"
 <br />
