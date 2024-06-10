@@ -8,6 +8,26 @@ This is a flask api with limited function for getting filtered data on a variety
 
 <br />
 
+## Format of product
+<br />
+
+  ```Typescript
+  {
+    "description": string,
+    "id": int,
+    "image_by": {
+      "name": "link"
+    }
+    "images": ["array of links"],
+    "keywords": ["array of keywords"],
+    "price": int,
+    "ratings": int,
+    "stock": int
+  }
+  ```
+
+<br />
+
 ## The 4 Main Pathways
 
 - ### "/"
