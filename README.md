@@ -8,10 +8,9 @@ This is a flask api with limited function for getting filtered data on a variety
 
 <br />
 
-## Format of product
-<br />
+Product format:
 
-  ```Typescript
+  ```csharp
   {
     "description": string,
     "id": int,
@@ -22,7 +21,41 @@ This is a flask api with limited function for getting filtered data on a variety
     "keywords": ["array of keywords"],
     "price": int,
     "ratings": int,
-    "stock": int
+    "stock": int,
+    "type": ["array of types"]
+  }
+  ```
+<br />
+
+Example Product:
+
+  ```json
+  {
+    "description": "Fujifilm X-T10 camera",
+    "id": 1,
+    "image_by": {
+      "Math": "https://unsplash.com/@builtbymath?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+    },
+    "images": [
+      "https://i.postimg.cc/YCp7G2Ld/math-In-K0-X-GDjr-Q-unsplash.jpg",
+      "https://i.postimg.cc/8PdDzfcF/math-3-Qb-OHeq-Zn-E4-unsplash.jpg",
+      "https://i.postimg.cc/vZ3sWRWb/math-k-POia9-E2d-NI-unsplash.jpg",
+      "https://i.postimg.cc/fbyhCHKX/math-lf-Rlv3nuf78-unsplash.jpg"
+    ],
+    "keywords": [
+      "fujifilm",
+      "x-t10",
+      "camera",
+      "technology",
+      "tech",
+      "Fujifilm X-T10 camera"
+    ],
+    "price": 627.71,
+    "ratings": 4.5,
+    "stock": 8,
+    "type": [
+      "Technology"
+    ]
   }
   ```
 
@@ -46,6 +79,7 @@ This is a flask api with limited function for getting filtered data on a variety
   {
     "page": 1,
     "pages": 2,
+    "per_page": 10,
     "products": [
       {
         "description": "White and Black Amazon Echo Dot 2 smart speaker",
