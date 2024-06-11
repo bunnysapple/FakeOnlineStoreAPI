@@ -298,7 +298,7 @@ Example Product:
 ## Owner
 
 <a href="https://github.com/bunnysapple">![bunnysapple](https://wsrv.nl/?url=avatars.githubusercontent.com/u/148458681?v=4&w=150&h=150&a=crop-22-0&mask=circle&mtrim)</a><br />
-<a style="color: white" href="https://github.com/bunnysapple"><b>Athul Krishna Madathil Sunil</b>/<br />
+<a style="color:white" href="https://github.com/bunnysapple"><b>Athul Krishna Madathil Sunil</b>/<br />
 <b>bunnysapple</b></a>
 
 ## Image Shoutout
